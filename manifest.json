@@ -1,0 +1,26 @@
+{
+  "name": "8tracks Anywhere",
+  "description": "Allows listening to 8tracks from anywhere in the world",
+  "version": "1.0",
+  "permissions": [
+    "cookies",
+    "*://*.8tracks.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.8tracks.com/*"
+      ],
+      "js": [
+        "scripts/contentScript.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "manifest_version": 2
+}
