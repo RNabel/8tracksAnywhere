@@ -7,6 +7,8 @@ function removeItem(sKey, sPath, sDomain) {
 }
 
 removeItem("country_code2");
+removeItem("country_code3");
 
 // Set the cookie to US.
 document.cookie="country_code2=US";
+document.cookie="country_code3=US";
