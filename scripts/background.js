@@ -1,5 +1,5 @@
 function cookieHandler(info) {
-    if (info.cause == "explicit" && info.cookie.domain == "8tracks" && info.cookie.name == "country_code2") {
+    if (info.cause == "explicit" && info.cookie.domain == "8tracks" && (info.cookie.name == "country_code2" || info.cookie.name == "country_code3")) {
         // Overwrite cookie.
         var replacementCookie = info.cookie;
         replacementCookie.value = "US";
